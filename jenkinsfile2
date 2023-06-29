@@ -1,1 +1,22 @@
 
+Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any //在任何可用的代理上，执行流水线或者它的任何阶段   
+    stages {
+        stage('Build') {  //定义Build阶段
+            steps {
+                // 执行Build阶段的相关步骤
+            }
+        }
+        stage('Test') { //定义Test阶段
+            steps {
+                // 执行Test阶段的相关步骤
+            }
+        }
+        stage('Deploy') { //定义Deploy阶段
+            steps {
+                // 执行deploy阶段的相关步骤 
+            }
+        }
+    }
+}
